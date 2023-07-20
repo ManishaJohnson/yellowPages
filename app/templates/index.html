@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Phone Directory</title>
+  <link rel="stylesheet" href="{% static 'stylesheet/index.css' %}">
+</head>
+<body>
+  <h1>Yellow Pages</h1>
+  <div class="container">
+    <div class="row">
+      <div class="form-section">
+  
+
+        <form method="post" action="{% url 'savecontactform' %}">
+          {% csrf_token %}
+          <div class="txt_field">
+            <input type="text" name="name" required>
+            <label>Name</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" name="country_code" required>
+            <label>Country Code</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" name="phone_number" required>
+            <label>Phone Number</label>
+          </div>
+          <input type="submit" value="Add Contact">
+        </form>
+      </div>
+
+      <div class="table-section">
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>Country Code</td>
+            <td>Phone Number</td>
+          </tr>
+          {% for x in obj %}
+          <tr>
+            <td>{{x.name}}</td>
+            <td>{{x.ph1}}</td>
+            <td>{{x.ph2}}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
