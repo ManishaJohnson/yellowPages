@@ -82,7 +82,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'address',
         'USER': 'mkj',
-        'PASSWORD': 'mkj'
+        'PASSWORD': 'mkj',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
@@ -131,5 +133,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'static')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# Whitenoise settings
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
