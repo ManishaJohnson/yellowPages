@@ -10,6 +10,11 @@ Note: If deployment is stopped, this is because of free trial from Railway. And 
 
 ## Reference from youtube
 
-https://www.youtube.com/watch?v=w5DRzbQ0Suo
+### Sufficient for deploying on vercel
 
-https://www.youtube.com/watch?v=I5x8lAVQ8QQ
+[Fastest Method to Connect Django to PostgreSQL Database](https://www.youtube.com/watch?v=w5DRzbQ0Suo)
+[How to Deploy a Fullstack Django Web App on Vercel.](https://www.youtube.com/watch?v=I5x8lAVQ8QQ)
+
+[Postgre-Django basics](https://www.youtube.com/watch?v=unFGJhIvHU4)
+
+Side note: All credits to third party creators information whose information I found helpful.
